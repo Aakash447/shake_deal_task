@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  margin: 2rem;
 }
 
 .App-logo {
@@ -36,3 +37,20 @@
     transform: rotate(360deg);
   }
 }
+
+.App .input_textarea {
+  height: 100px;
+  width: 400px;
+}
+.App .input-group {
+  margin-bottom: 1rem;
+}
+.App .input-group label {
+  display: block;
+  margin-bottom: .5rem;
+}
+.App .input-group select {
+  height: 40px;
+  width: 400px;
+}
+
