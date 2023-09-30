@@ -27,8 +27,8 @@ function App() {
       } catch (error) {
         console.error("error:", error);
       }
-    }else{
-      alert('Please fill the task and team')
+    } else {
+      alert("Please fill the task and team");
     }
   };
 
@@ -68,7 +68,6 @@ function App() {
           value={task.task}
         />
       </div>
-
       <div className="input-group">
         <label htmlFor="cars">Select a team:</label>
 
@@ -87,7 +86,12 @@ function App() {
       <div className="input-group">
         <button onClick={addTask}>Add</button>
       </div>
-      {assignedTo?.name && <div>Assigned To: {assignedTo?.name}</div>}
+      {assignedTo?.name && (
+        <section>
+          <div>Assigned To: {assignedTo?.name}</div>
+          <div style={{ marginTop:'10px' }} >position : {assignedTo?.position}</div>
+        </section>
+      )}
     </div>
   );
 }
